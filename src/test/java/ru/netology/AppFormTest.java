@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppFormTest {
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeAll
     static void setUpAll(){
