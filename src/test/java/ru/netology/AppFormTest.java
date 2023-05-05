@@ -7,14 +7,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppFormTest {
     private WebDriver driver;
 
     @BeforeAll
-    static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/PC/Java/selenium/driver/win/chromedriver.exe");
+    static void setUpAll(){
+        WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
