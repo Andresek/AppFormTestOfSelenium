@@ -15,7 +15,7 @@ public class AppFormTest {
     private WebDriver driver;
 
     @BeforeAll
-    static void setUpAll(){
+    public static void setUpAll() {
         WebDriverManager.chromedriver().setup();
     }
 
