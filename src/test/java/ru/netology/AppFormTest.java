@@ -9,12 +9,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppFormTest {
-    private WebDriver driver;
+    WebDriver driver;
 
     @BeforeAll
     static void setUpAll(){
